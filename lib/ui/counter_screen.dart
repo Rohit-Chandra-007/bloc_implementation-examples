@@ -1,6 +1,7 @@
-import 'package:counter_bloc_app/bloc/counter_bloc.dart';
-import 'package:counter_bloc_app/bloc/events.dart';
-import 'package:counter_bloc_app/bloc/states.dart';
+import 'package:counter_bloc_app/bloc/counter/counter_bloc.dart';
+import 'package:counter_bloc_app/bloc/counter/events.dart';
+import 'package:counter_bloc_app/bloc/counter/states.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -14,7 +15,7 @@ class CounterScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Elegant Counter UI'),
-        centerTitle: true,
+
       ),
       body: Center(
         child: Column(

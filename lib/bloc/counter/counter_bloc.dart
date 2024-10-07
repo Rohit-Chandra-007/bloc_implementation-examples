@@ -1,9 +1,9 @@
-import 'package:counter_bloc_app/bloc/events.dart';
-import 'package:counter_bloc_app/bloc/states.dart';
+import 'package:counter_bloc_app/bloc/counter/events.dart';
+import 'package:counter_bloc_app/bloc/counter/states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CounterBloc extends Bloc<CounterEvent, CounterState> {
-  CounterBloc() : super(CounterInitial()) {
+  CounterBloc() : super(const CounterInitial()) {
     on<Increment>((event, emit) {
       final currentState = state;
       final newCount =
